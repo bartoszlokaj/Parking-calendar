@@ -1,0 +1,16 @@
+.backdrop {
+  transform: translateY(-100vh);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 110vw;
+  height: 110vh;
+  background-color: $color-black;
+  opacity: 0;
+  z-index: 200;
+
+  &Active {
+    transform: translateY(0);
+    opacity: .6;
+  }
+}

@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 50%; //1rem = 8px
+
+  @include respond(tablet) { font-size: 62.5%; } //1rem = 10px
+  @include respond(bigDesktop) { font-size: 100%; } // 1rem = 16px
+}
+
+body {
+  position: relative;
+  box-sizing: border-box;
+  background-color: $color-white;
+}

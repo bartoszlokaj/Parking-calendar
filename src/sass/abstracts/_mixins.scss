@@ -1,0 +1,30 @@
+// Mobile first approach
+@mixin respond($breakpoint) {
+  
+  @if $breakpoint == tablet {
+    @media (min-width: 48em) { @content };      //768px
+  }
+
+  @if $breakpoint == desktop {
+    @media (min-width: 64em) { @content };    //1024px
+  }
+
+  @if $breakpoint == bigDesktop {
+    @media (min-width: 123em) { @content };    // >1920px
+  }
+
+  @if $breakpoint == land {
+    @media (orientation: landscape) { @content }
+  }
+}
+
+@mixin shadow { box-shadow: 0 0 .7rem rgba(0,0,0, .6); }
+
+@mixin shadowSpreaded { box-shadow: 0 0 .7rem 2px rgba(0,0,0, .6); }
+
+@mixin absoluteCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
