@@ -6,6 +6,8 @@ export const datePicker = () => {
   const fieldArrival = document.getElementById("datepicker");
   const fieldDeparture = document.getElementById("datepicker2");
 
+  let dateArrival = null;
+
   window.addEventListener("DOMContentLoaded", () => {
     const pickerArrival = new Pikaday({
       field: fieldArrival,
@@ -38,12 +40,15 @@ export const datePicker = () => {
         weekdaysShort: ["Niedz", "Pon", "Wt", "Śr", "Czw", "Piąt", "Sob"]
       },
       firstDay: 1,
+      minDate: new Date(),
       keyboardInput: false,
       onSelect: function(date) {
-        console.log(date);
+        dateArrival = moment(date).format("YYYY,MM,DD");
+        console.log(dateArrival)
         date = moment(date).format("DD / MM / YYYY");
         fieldArrival.value = date;
-        // console.log(field.value = date);
+        
+        pickerDeparture._o.minDate = new Date(dateArrival)
       }
     });
 
@@ -78,13 +83,11 @@ export const datePicker = () => {
         weekdaysShort: ["Niedz", "Pon", "Wt", "Śr", "Czw", "Piąt", "Sob"]
       },
       keyboardInput: false,
-      onSelect: function(date) {
-        console.log(date);
-        date = moment(date).format("DD / MM / YYYY");
-        console.log(date);
-        fieldDeparture.value = date;
-
-        // field.value = date;
+      firstDay: 1,
+      minDate: new Date(),
+      onSelect: (date) => {
+          date = moment(date).format("DD / MM / YYYY");
+          fieldDeparture.value = date;
       }
     });
   });
