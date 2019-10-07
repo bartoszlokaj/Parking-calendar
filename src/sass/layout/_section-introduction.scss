@@ -15,7 +15,6 @@
 
   &__left {
     width: 50%;
-    min-width: 500px;
     padding-left: 12.6rem;
 
     display: flex;
@@ -43,9 +42,22 @@
   }
 
   @include respond(tablet-big) {
-    &__right {
-      padding-bottom: 48.7rem;
+    &__left {
       justify-content: center;
+      padding-left: 4rem;
+    }
+
+    &__right {
+      padding-bottom: 28.7rem;
+      justify-content: center;
+      align-items: flex-end;
+    }
+  }
+
+  @include respond(tablet) {
+    &__right {
+      padding-right: 4rem;
+      justify-content: flex-end;
       align-items: flex-end;
     }
   }
@@ -53,12 +65,17 @@
   @include respond(phone-l) {
     &__left {
       width: 100%;
+      height: unset;
+      padding: unset;
       justify-content: center;
       order: 2;
+      background: red;
     }
 
     &__right {
       width: 100%;
+      padding: unset;
+      height: unset;
       order: 1;
     }
   }
@@ -68,6 +85,13 @@
   .introduction {
     background-size: cover;
     background-position-x: 0px, 2rem;
+  }
+}
+
+@include respond(tablet) {
+  .introduction {
+    background-size: cover;
+    background-position-x: 0px, -24rem;
   }
 }
 
