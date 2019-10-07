@@ -43,7 +43,7 @@ export const datePicker = () => {
       minDate: new Date(),
       keyboardInput: false,
       onSelect: function(date) {
-        dateArrival = moment(date).format("YYYY,MM,DD");
+        dateArrival = moment(date).add(1, 'd').format("YYYY,MM,DD");
         console.log(dateArrival)
         date = moment(date).format("DD / MM / YYYY");
         fieldArrival.value = date;
@@ -91,34 +91,6 @@ export const datePicker = () => {
       }
     });
   });
-
-  // const picker = [];
-
-  // inputs.forEach((input, i) => {
-  //     input =
-  //         picker[i] = new Pikaday({
-  //             field: inputs[i],
-  //             format: 'L',
-  //             i18n: {
-  //                 previousMonth : 'Previous Month',
-  //                 nextMonth     : 'Next Month',
-  //                 months        : ['Styczeń','Luty','Marzec','Kwiecień','Maj','Czerwiec','Lipiec','Sierpień','Wrzesień','Październik','Listopad','Grudzień'],
-  //                 weekdays      : ['Niedziela','Poniedziałek','Wtorek','Środa','Czwartek','Piątek','Sobota'],
-  //                 weekdaysShort : ['Niedz','Pon','Wt','Śr','Czw','Piąt','Sob']
-  //             },onSelect: function(date) {
-  //                 console.log(date);
-  //                 date = moment(date).format('DD / MM / YYYY');
-  //                 console.log(date);
-  //                 inputs.forEach((el, index) => {
-  //                     el.value = date;
-  //                 })
-  //                 // field.value = moment().format('MMMM Do YYYY, h:mm:ss a');
-  //                 // console.log(this.getMoment().format('Do MMMM YYYY'));
-  //             }
-  //         });
-  //     console.log(picker[i])
-
-  //     })
 };
 
 datePicker();
