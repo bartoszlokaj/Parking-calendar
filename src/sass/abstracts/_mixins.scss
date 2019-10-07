@@ -1,4 +1,4 @@
-// Mobile first approach
+// Desktop first approach
 @mixin respond($breakpoint) {
   
   @if $breakpoint == phoneS {
@@ -10,7 +10,7 @@
   }
 
   @if $breakpoint == phoneL {
-    @media (max-width: 26.6em) { @content };      //425px
+    @media (max-width: 31.2em) { @content };      //500px
   }
 
   @if $breakpoint == tablet {
@@ -18,7 +18,7 @@
   }
 
   @if $breakpoint == tablet-big {
-    @media (max-width: 64em) { @content };      //800px
+    @media (max-width: 64em) { @content };      //1024px
   }
 
   @if $breakpoint == laptop {

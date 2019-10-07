@@ -97,4 +97,14 @@ body {
       margin-left: 0;
     }
   }
+
+  @include respond(tablet-big) {
+    &__top {
+      font-size: 3rem;
+      margin-bottom: unset;
+    }
+    &__bottom {
+      font-size: 6rem;
+    }
+  }
 }
