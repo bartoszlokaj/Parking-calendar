@@ -10,7 +10,6 @@
     <div class="backdrop"></div>
     <div class="modal"></div>
     <section class="introduction">
-
       <div class="introduction__left">
         <div class="card">
           <div class="card__top">
@@ -25,13 +24,20 @@
               <div class="form__cell">
                 <div class="form__single">
                   <label for="datepicker" class="label">data</label>
-                  <input data-toggle="datepicker" type="text" value="" autocomplete="off" name="date" id="datepicker" class="input input--introduction">
+                  <input
+                    data-toggle="datepicker"
+                    type="text"
+                    value=""
+                    autocomplete="off"
+                    name="date"
+                    id="datepicker"
+                    class="input input--introduction"
+                  />
                 </div>
                 <div class="form__single">
                   <label for="arrival-hour" class="label">godzina</label>
                   <select id="arrival-hour" class="select" name="arrival-hour">
-                   
-                    </select>
+                  </select>
                 </div>
               </div>
 
@@ -39,43 +45,51 @@
               <div class="form__cell">
                 <div class="form__single">
                   <label for="datepicker2" class="label">data</label>
-                  <input data-toggle="datepicker" type="text" autocomplete="off" name="date" id="datepicker2" value="" class="input input--introduction">
+                  <input
+                    data-toggle="datepicker"
+                    type="text"
+                    autocomplete="off"
+                    name="date"
+                    id="datepicker2"
+                    value=""
+                    class="input input--introduction"
+                  />
                 </div>
                 <div class="form__single">
                   <label for="departure-hour" class="label">godzina</label>
-                  <select id="departure-hour" class="select">
-                    
-                  </select>
+                  <select id="departure-hour" class="select"> </select>
                 </div>
               </div>
 
-              <button class="button button--cta">zarezerwuj »</button>
+              <button class="button button--cta">
+                zarezerwuj »
+              </button>
             </form>
           </div>
 
           <div class="card__bottom">
             <ul class="card__list">
-              <li class="card__list-item">Darmowy transfer na lotnisko</li>
-              <li class="card__list-item">Rezerwacja bez karty kredytowejo</li>
-              <li class="card__list-item">Gwarancja najniższej ceny</li>
-              <li class="card__list-item">99% zadowolonych klientów</li>
+              <li class="card__list-item"><img src="./img/check.png" alt="Check icon" class="card__list-check-icon">Darmowy transfer na lotnisko</li>
+              <li class="card__list-item"><img src="./img/check.png" alt="Check icon" class="card__list-check-icon">Rezerwacja bez karty kredytowejo</li>
+              <li class="card__list-item"><img src="./img/check.png" alt="Check icon" class="card__list-check-icon">Gwarancja najniższej ceny</li>
+              <li class="card__list-item"><img src="./img/check.png" alt="Check icon" class="card__list-check-icon">99% zadowolonych klientów</li>
             </ul>
           </div>
         </div>
       </div>
 
       <div class="introduction__right">
-        <header class="header--main">
-          Parkuj i zwiedzaj świat
-          bez zmartwień
+        <header class="introduction__header-box">
+          <h1 class="header-main header-main__top">
+            Parkuj i zwiedzaj świat
+          </h1>
+          <h2 class="header-main header-main__bottom">
+            bez zmartwień
+          </h2>
         </header>
       </div>
-
-
-
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
-
   </body>
 </html>
