@@ -10,7 +10,7 @@ html {
   scroll-behavior: smooth;
   font-size: 62.5%; //1rem = 10px
 
-  @include respond(tablet) { font-size: 50%; } //1rem = 8px
+  @include respond(laptop) { font-size: 50%; } //1rem = 8px
   @include respond(bigDesktop) { font-size: 100%; } // 1rem = 16px
 }
 

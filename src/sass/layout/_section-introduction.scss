@@ -4,32 +4,50 @@
 
   display: flex;
   align-items: flex-end;
+  flex-wrap: wrap;
   justify-content: center;
 
-  background-image: linear-gradient(
-  to right, transparent, rgba(0,0,0, 0.55)),url("./img/introduction_background-1.png"),url('./img/introduction_background-2.png');
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.55)),
+    url("./img/introduction_background-1.png"),
+    url("./img/introduction_background-2.png");
   background-repeat: no-repeat, no-repeat;
   background-position-x: 0px, 10.2rem;
 
   &__left {
     width: 50%;
+    min-width: 500px;
     padding-left: 12.6rem;
 
     display: flex;
     justify-content: flex-start;
+    order: 1;
   }
 
   &__right {
     width: 50%;
+    min-width: 500px;
     height: 100%;
     padding-bottom: 12.7rem;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
+    order: 2;
   }
 
   &__header-box {
     margin-left: 9rem;
   }
-}
+  @include respond(laptop) {
+    &__header-box {
+      margin-left: 0;
+    }
 
+    &__left {
+      order: 2;
+    }
+
+    &__right {
+      order: 1;
+    }
+  }
+}

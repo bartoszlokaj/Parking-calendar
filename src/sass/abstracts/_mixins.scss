@@ -17,6 +17,10 @@
     @media (max-width: 48em) { @content };      //800px
   }
 
+  @if $breakpoint == tablet-big {
+    @media (max-width: 64em) { @content };      //800px
+  }
+
   @if $breakpoint == laptop {
     @media (max-width: 90em) { @content };        //1440px
   }

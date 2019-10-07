@@ -91,4 +91,10 @@ body {
     font-weight: bold;
     letter-spacing: -1px;
   }
+
+  @include respond(laptop) {
+    &__top {
+      margin-left: 0;
+    }
+  }
 }
