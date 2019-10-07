@@ -23,7 +23,7 @@ html, body, input, select, textarea {
 
 body {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: $color-dark-gray-1;
 }
 
@@ -31,18 +31,18 @@ body {
   &__title {
     font-family: "Muller";
     color: $color-primary;
-    font-size: 26px;
+    font-size: 2.6rem;
     font-weight: 700;
-    line-height: 20px;
+    line-height: 2rem;
     text-transform: uppercase;
     letter-spacing: 1px;
   }
 
   &__address {
     color: $color-primary;
-    font-size: 19px;
+    font-size: 1.9rem;
     display: block;
-    margin-bottom: 22px;
+    margin-bottom: 2rem;
   }
 
   &__bottom {
@@ -55,12 +55,12 @@ body {
     color: $color-black;
     font-weight: bold;
     display: block;
-    margin-bottom: 7px;
+    margin-bottom: .7rem;
   }
 
   .label {
     color: $color-dark-gray-1;
-    font-size: 14px;
+    font-size: 1.4rem;
     margin-bottom: 6px;
   }
 }
@@ -71,6 +71,7 @@ body {
     color: $color-white;
     text-transform: uppercase;
     letter-spacing: 1.6px;
+    font-weight: bold;
   }
 }
 
@@ -78,15 +79,15 @@ body {
   color: $color-white;
 
   &__top {
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 400;
     letter-spacing: 2.5px;
-    margin-left: 34px;
-    margin-bottom: -22px;
+    margin-left: 3.4rem;
+    margin-bottom: -2.2rem;
   }
 
   &__bottom {
-    font-size: 105px;
+    font-size: 10.5rem;
     font-weight: bold;
     letter-spacing: -1px;
   }

@@ -1,11 +1,10 @@
 .button {
-  font: inherit;
   cursor: pointer;
   &--cta {
-    width: 245px;
-    height: 55px;
+    width: 24.5rem;
+    height: 5.5rem;
     background-color: $color-primary;
     border: 1px solid $color-primary;
-    margin-bottom: 36px;
+    margin-bottom: 3.6rem;
   }
 }

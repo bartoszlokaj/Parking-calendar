@@ -1,20 +1,28 @@
 // Mobile first approach
 @mixin respond($breakpoint) {
   
+  @if $breakpoint == phoneS {
+    @media (max-width: 20em) { @content };       //320px
+  }
+
+  @if $breakpoint == phone {
+    @media (max-width: 23.5em) { @content };      //375px
+  }
+
+  @if $breakpoint == phoneL {
+    @media (max-width: 26.6em) { @content };      //425px
+  }
+
   @if $breakpoint == tablet {
-    @media (min-width: 48em) { @content };      //768px
+    @media (max-width: 48em) { @content };      //800px
   }
 
-  @if $breakpoint == desktop {
-    @media (min-width: 64em) { @content };    //1024px
+  @if $breakpoint == laptop {
+    @media (max-width: 90em) { @content };        //1440px
   }
 
-  @if $breakpoint == bigDesktop {
-    @media (min-width: 123em) { @content };    // >1920px
-  }
-
-  @if $breakpoint == land {
-    @media (orientation: landscape) { @content }
+  @if $breakpoint == big-desktop {
+    @media (min-width: 125em) { @content };    //2000px
   }
 }
 

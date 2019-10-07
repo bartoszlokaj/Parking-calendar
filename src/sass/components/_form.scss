@@ -7,6 +7,14 @@
 
   &__cell {
     display: flex;
+
+    &--arrival {
+      margin-bottom: -.8rem;
+    }
+
+    &--departure {
+      margin-bottom: 9px;
+    }
   }
 
   &__single {

@@ -1,28 +1,28 @@
 .card{
-   width: 525px;
+   width: 52.5rem;
    border-radius: 5px 5px 0 0;
    background-color: $color-white;
 
    &__top {
-      padding: 40px 45px 0 45px;
+      padding: 4rem 4.5rem 0 4.5rem;
    }
 
    &__bottom {
       padding: 30px 0;
       background-color: $color-primary;
-      padding: 30px 45px 30px 45px;
+      padding: 3rem 4.5rem 3rem 4.5rem;
 
       .card__list {
          list-style-type: none;
 
          &-item {
-            padding: 5px 0;
+            padding: .5rem 0;
             display: flex;
             align-items: center;
          }
 
          &-check-icon {
-            margin-right: 10px;
+            margin-right: 1rem;
          }
 
          &-item:nth-child(1) {
