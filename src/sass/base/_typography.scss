@@ -107,4 +107,14 @@ body {
       font-size: 6rem;
     }
   }
+
+  @include respond(phone-l) {
+    &__top {
+      font-size: 2rem;
+      margin-bottom: unset;
+    }
+    &__bottom {
+      font-size: 4rem;
+    }
+  }
 }

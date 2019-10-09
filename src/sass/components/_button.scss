@@ -7,4 +7,28 @@
     border: 1px solid $color-primary;
     margin-bottom: 3.6rem;
   }
+
+  @include respond(tablet) {
+    &--cta {
+      width: 32.1rem;
+    }
+  }
+
+  @include respond(phone-l) {
+    &--cta {
+      width: 28rem;
+    }
+  }
+
+  @include respond(phone) {
+    &--cta {
+      width: 25rem;
+    }
+  }
+
+  @include respond(phone-s) {
+    &--cta {
+      width: 100%;
+    }
+  }
 }
