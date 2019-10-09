@@ -45,7 +45,7 @@
   }
 }
 
-@include respond(phone-s) {
+@include respond(phone) {
   .input--arrival {
     margin-bottom: 3rem;
   }

@@ -38,7 +38,7 @@
     }
   }
 
-  @include respond(phone-s) {
+  @include respond(phone) {
     &__name {
       margin-bottom: .2rem;
     }
