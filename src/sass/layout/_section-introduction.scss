@@ -33,9 +33,6 @@
     order: 2;
   }
 
-  &__header-box {
-    // margin-left: 9rem;
-  }
   @include respond(laptop) {
     &__header-box {
       margin-left: 4rem;

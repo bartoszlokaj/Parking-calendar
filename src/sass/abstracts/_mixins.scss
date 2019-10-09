@@ -10,7 +10,7 @@
   }
 
   @if $breakpoint == phone-l {
-    @media (max-width: 35.9em) { @content };      //500px
+    @media (max-width: 35.9em) { @content };      //575px
   }
 
   @if $breakpoint == tablet {
