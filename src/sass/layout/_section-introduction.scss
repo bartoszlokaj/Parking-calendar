@@ -34,11 +34,11 @@
   }
 
   &__header-box {
-    margin-left: 9rem;
+    // margin-left: 9rem;
   }
   @include respond(laptop) {
     &__header-box {
-      margin-left: 0;
+      margin-left: 4rem;
     }
   }
 
@@ -93,6 +93,8 @@
 
     &__header-box {
       margin-top: 13rem;
+      margin-left: 0;
+
       margin-right: auto;
     }
   }

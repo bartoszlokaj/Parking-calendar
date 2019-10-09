@@ -82,7 +82,7 @@ body {
     font-size: 6rem;
     font-weight: 400;
     letter-spacing: 2.5px;
-    margin-left: 3.4rem;
+    text-align: end;
     margin-bottom: -2.2rem;
   }
 
@@ -94,7 +94,11 @@ body {
 
   @include respond(laptop) {
     &__top {
-      margin-left: 0;
+      font-size: 4rem;
+    }
+
+    &__bottom {
+      font-size: 8rem;
     }
   }
 
@@ -106,6 +110,12 @@ body {
     &__bottom {
       font-size: 6rem;
       letter-spacing: 1px;
+    }
+  }
+
+  @include respond(tablet) {
+    &__top {
+      text-align: start;
     }
   }
 
