@@ -21,4 +21,20 @@
     display: flex;
     flex-flow: column;
   }
+
+  @include respond(phone-l) {
+    &__cell {
+      width: 100%;
+    }
+
+    &__single {
+      &--input {
+        width: 70%;
+      }
+
+      &--select {
+        width: 30%;
+      }
+    }
+  }
 }

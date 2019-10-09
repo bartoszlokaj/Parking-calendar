@@ -16,18 +16,6 @@
 
   @include respond(phone-l) {
     &--cta {
-      width: 28rem;
-    }
-  }
-
-  @include respond(phone) {
-    &--cta {
-      width: 25rem;
-    }
-  }
-
-  @include respond(phone-s) {
-    &--cta {
       width: 100%;
     }
   }

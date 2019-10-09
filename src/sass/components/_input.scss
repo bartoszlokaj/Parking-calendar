@@ -27,26 +27,10 @@
 
 @include respond(phone-l) {
   .input {
-    width: 28rem;
+    width: 90%;
   }
 
   .select {
-    width: 11rem;
-  }
-}
-
-@include respond(phone) {
-  .input {
-    width: 25rem;
-  }
-
-  .select {
-    width: 11rem;
-  }
-}
-
-@include respond(phone-s) {
-  .input {
-    width: 20rem;
+    width: 100%;
   }
 }

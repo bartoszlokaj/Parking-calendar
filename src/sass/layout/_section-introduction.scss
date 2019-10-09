@@ -96,6 +96,12 @@
       margin-right: auto;
     }
   }
+
+  @include respond(phone-s) {
+    &__header-box {
+      margin-top: 4rem;
+    }
+  }
 }
 
 @include respond(laptop) {
@@ -107,7 +113,12 @@
 
 @include respond(tablet) {
   .introduction {
-    background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.45)), url("./img/introduction_background-2.1.png");
+    background-image: linear-gradient(
+        to right,
+        transparent,
+        rgba(0, 0, 0, 0.45)
+      ),
+      url("./img/introduction_background-2.1.png");
     background-size: cover, cover;
     background-position-x: 0;
   }
@@ -117,5 +128,11 @@
   .introduction {
     flex-flow: column;
     justify-content: space-between;
+  }
+}
+
+@include respond(phone) {
+  .introduction {
+    height: 100vh;
   }
 }
