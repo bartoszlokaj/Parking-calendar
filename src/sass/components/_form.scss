@@ -37,4 +37,10 @@
       }
     }
   }
+
+  @include respond(phone-s) {
+    &__name {
+      margin-bottom: .2rem;
+    }
+  }
 }

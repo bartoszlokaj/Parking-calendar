@@ -44,3 +44,13 @@
     width: 100%;
   }
 }
+
+@include respond(phone-s) {
+  .input--arrival {
+    margin-bottom: 3rem;
+  }
+
+  .input--daparture {
+    margin-bottom: 1rem;    
+  }
+}
