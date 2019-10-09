@@ -92,14 +92,14 @@
     }
 
     &__header-box {
-      margin-top: 8rem;
+      margin-top: 10rem;
       margin-right: auto;
     }
   }
 
   @include respond(phone-s) {
     &__header-box {
-      margin-top: 4rem;
+      margin-top: 7rem;
     }
   }
 }

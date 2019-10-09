@@ -34,3 +34,13 @@
     width: 100%;
   }
 }
+
+@include respond(phone-l) {
+  .input {
+    margin-bottom: 1.5rem;
+  }
+
+  .select {
+    width: 100%;
+  }
+}

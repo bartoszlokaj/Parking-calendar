@@ -105,16 +105,23 @@ body {
     }
     &__bottom {
       font-size: 6rem;
+      letter-spacing: 1px;
     }
   }
 
   @include respond(phone-l) {
     &__top {
-      font-size: 2rem;
+      font-size: 2.7rem;
       margin-bottom: unset;
     }
     &__bottom {
-      font-size: 4rem;
+      font-size: 4.7rem;
+    }
+  }
+
+  @include respond(phone-s) {
+    &__top {
+      margin-bottom: -1rem;
     }
   }
 }
