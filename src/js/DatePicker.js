@@ -7,6 +7,7 @@ export const datePicker = () => {
   const fieldDeparture = document.getElementById("datepicker2");
 
   let dateArrival = null;
+  let dateDeparture = null;
 
   window.addEventListener("DOMContentLoaded", () => {
     const pickerArrival = new Pikaday({
@@ -86,6 +87,13 @@ export const datePicker = () => {
       firstDay: 1,
       minDate: new Date(),
       onSelect: (date) => {
+          dateDeparture = moment(date).subtract(1, 'd').format("YYYY,MM,DD");
+          let arrivalInput = document.querySelector('#datepicker');
+
+          if(arrivalInput.value.legth === undefined) {
+            pickerArrival._o.minDate = new Date(dateDeparture)
+          }
+
           date = moment(date).format("DD / MM / YYYY");
           fieldDeparture.value = date;
       }
