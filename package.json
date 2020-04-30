@@ -35,7 +35,7 @@
     "@chenfengyuan/datepicker": "^1.0.9",
     "autoprefixer": "^9.6.1",
     "imagesloaded": "^4.1.4",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "moment": "^2.24.0",
     "pikaday": "^1.8.0"
   }
